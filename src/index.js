@@ -4,7 +4,7 @@ let store = createStore(reducer);
 
 function createStore(reducer){
  let state;
-  
+
  function dispatch(action){
     state = reducer(state, action);
     render();
@@ -14,7 +14,7 @@ function createStore(reducer){
     return state;
   }
 
-  
+
 
   return { dispatch, getState};
 }
